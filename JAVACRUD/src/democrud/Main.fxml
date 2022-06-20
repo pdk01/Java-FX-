@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #36ced1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democrud.MainController">
+   <children>
+      <VBox layoutX="14.0" layoutY="278.0" prefHeight="272.0" prefWidth="150.0" spacing="38.0">
+         <children>
+            <Label text="Customer ID" textFill="#1e1d1d">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Customer Name">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Train Name">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Train Number">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label text="PNR Number">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="171.0" layoutY="278.0" prefHeight="278.0" prefWidth="171.0" spacing="28.0">
+         <children>
+            <TextField fx:id="tf_id" />
+            <TextField fx:id="tf_name" prefHeight="13.0" prefWidth="228.0" />
+            <TextField fx:id="tf_trainname" />
+            <TextField fx:id="tf_trainnumber" />
+            <TextField fx:id="pnr" />
+         </children>
+      </VBox>
+      <TableView fx:id="tv_train" layoutX="400.0" layoutY="149.0" onMouseClicked="#handleButtonAction" prefHeight="303.0" prefWidth="545.0">
+        <columns>
+          <TableColumn fx:id="col_CustomerId" prefWidth="108.79998779296875" text="CustomerID" />
+          <TableColumn fx:id="col_customer_name" prefWidth="108.79998779296875" text="Customer Name" />
+            <TableColumn fx:id="col_train_name" prefWidth="99.20001220703125" text="Train Name" />
+            <TableColumn fx:id="col_train_number" prefWidth="112.79998779296875" text="Train Number" />
+            <TableColumn fx:id="col_pnr_no" minWidth="0.0" prefWidth="125.5999755859375" text="PNR Number" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_insert" layoutX="20.0" layoutY="574.0" mnemonicParsing="false" onAction="#submitdetails" prefHeight="26.0" prefWidth="94.0" text="Insert" />
+      <Button fx:id="btn_update" layoutX="138.0" layoutY="574.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="26.0" prefWidth="94.0" text="Update" />
+      <Button fx:id="btn_delete" layoutX="257.0" layoutY="574.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="26.0" prefWidth="94.0" text="Delete" />
+      <AnchorPane layoutX="-7.0" layoutY="654.0" prefHeight="46.0" prefWidth="973.0" style="-fx-background-color: #3d4956;" />
+      <AnchorPane prefHeight="46.0" prefWidth="967.0" style="-fx-background-color: #3d4956;" />
+      <Text fill="#3d4956" layoutX="164.0" layoutY="122.0" stroke="#3d4956" strokeType="INSIDE" strokeWidth="7.0" text="TRAIN BOOKING PORTAL" wrappingWidth="769.565185546875">
+         <font>
+            <Font name="Calibri Bold" size="56.0" />
+         </font>
+      </Text>
+      <Button layoutX="788.0" layoutY="587.0" mnemonicParsing="false" onAction="#switchtoScene3" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #FF0000;" text="LOGOUT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelll" layoutX="434.0" layoutY="547.0" prefHeight="66.0" prefWidth="220.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #36ced1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democrud.LoginSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="74.0" layoutY="26.0" prefHeight="70.0" prefWidth="828.0" text="Train Booking Portal Login " textFill="#00070d">
+         <font>
+            <Font name="Calibri Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="246.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchtoScene2" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #00FF00;" text="LOGIN" textFill="#3d4956">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <VBox prefHeight="600.0" prefWidth="54.0" style="-fx-background-color: #3d4956;" />
+      <Label layoutX="61.0" layoutY="218.0" prefHeight="44.0" prefWidth="129.0" text="Username">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="61.0" layoutY="262.0" promptText="Enter Username" style="-fx-background-color: #FFFFFF;" />
+      <Label layoutX="61.0" layoutY="354.0" text="Password">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="61.0" layoutY="393.0" promptText="Enter Password" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="338.0" layoutY="125.0" />
+      <ImageView fitHeight="321.0" fitWidth="467.0" layoutX="438.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/train.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="61.0" layoutY="300.0" prefHeight="46.0" prefWidth="319.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="button2" layoutX="82.0" layoutY="461.0" mnemonicParsing="false" onAction="#switchtoScene1" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #00FF00;" text="Check" />
+   </children>
+</AnchorPane>
